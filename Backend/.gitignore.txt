@@ -1,0 +1,11 @@
+# Node.js dependencies
+node_modules/
+
+# Backend build output
+dist/
+
+# Environment files
+.env
+
+# Logs
+logs/

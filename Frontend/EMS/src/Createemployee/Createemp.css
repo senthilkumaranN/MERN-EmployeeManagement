@@ -1,0 +1,104 @@
+/* General styles for the add-container */
+.add-container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.add-h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Styling for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Styling for input fields and labels */
+.add-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.add-input label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.add-input input[type="text"],
+.add-input input[type="email"],
+.add-input select,
+.add-input input[type="radio"],
+.add-input input[type="checkbox"],
+.add-input input[type="file"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.add-input input[type="text"]:focus,
+.add-input input[type="email"]:focus,
+.add-input select:focus,
+.add-input input[type="radio"]:focus,
+.add-input input[type="checkbox"]:focus,
+.add-input input[type="file"]:focus {
+    border-color: #1ABC9C;
+    outline: none;
+}
+
+.add-input input[type="radio"],
+.add-input input[type="checkbox"] {
+    width: auto;
+}
+
+.add-input input[type="file"] {
+    padding: 5px;
+}
+
+.add-input p {
+    font-size: 0.875rem;
+    color: red;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #1ABC9C;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .add-container {
+        width: 90%;
+    }
+    .add-h1 {
+        font-size: 1.5rem;
+    }
+    .add-input input,
+    .add-input select,
+    .add-input button {
+        font-size: 0.9rem;
+    }
+}

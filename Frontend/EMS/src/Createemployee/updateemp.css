@@ -1,0 +1,104 @@
+/* General styles for the add-container */
+.update-container {
+    width: 60%;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.update-h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* Styling for the form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Styling for input fields and labels */
+.update-input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.update-input label {
+    font-size: 1rem;
+    color: #333;
+}
+
+.update-input input[type="text"],
+.update-input input[type="email"],
+.update-input select,
+.update-input input[type="radio"],
+.update-input input[type="checkbox"],
+.update-input input[type="file"] {
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.update-input input[type="text"]:focus,
+.update-input input[type="email"]:focus,
+.update-input select:focus,
+.update-input input[type="radio"]:focus,
+.update-input input[type="checkbox"]:focus,
+.update-input input[type="file"]:focus {
+    border-color: #1ABC9C;
+    outline: none;
+}
+
+.update-input input[type="radio"],
+.update-input input[type="checkbox"] {
+    width: auto;
+}
+
+.update-input input[type="file"] {
+    padding: 5px;
+}
+
+.update-input p {
+    font-size: 0.875rem;
+    color: red;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #1ABC9C;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #16a085;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .update-container {
+        width: 90%;
+    }
+    .update-h1 {
+        font-size: 1.5rem;
+    }
+    .update-input input,
+    .update-input select,
+    .update-input button {
+        font-size: 0.9rem;
+    }
+}
