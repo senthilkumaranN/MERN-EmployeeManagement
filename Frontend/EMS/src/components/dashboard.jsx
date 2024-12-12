@@ -63,6 +63,7 @@ const Dashboard = () => {
     const handleupdate = (id) =>{
         navigate(`/updateemployee/${id}`)
     }
+    
     return (
         <>
             <nav className='nav-bar'>
@@ -95,7 +96,7 @@ const Dashboard = () => {
                             filter.map((emp) => (
                                 <ul className='filter-table' key={emp._id}>
                                     <li>{emp.name}</li>
-                                    <img className="image" src={`http://localhost:3000/${emp.image}`} alt={emp.name} />
+                                    <img className="image" src={`${import.meta.env.VITE_API_URL}/${emp.image}`} alt={emp.name} />
                                     <li>{emp.email}</li>
                                     <li>{emp.MobileNo}</li>
                                     <li>{emp.designation}</li>

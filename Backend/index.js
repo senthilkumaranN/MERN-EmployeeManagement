@@ -11,7 +11,20 @@ const app = express();
 connectdatabase();
 
 //forntend url
-app.use(cors({ origin: 'http://localhost:5173' })); 
+app.use(cors({ origin: process.env.CLIENT_BASE_URL,
+      methods: ["GET","POST","DELETE","PUT"],
+      allowedHeaders: [
+        "Content-Type",
+        "Authorization",
+        "Cache-Control",
+        "Expires",
+        "Pragma",
+      ],
+      credentials: true,
+
+
+
+})); 
 
 
 //middleware
