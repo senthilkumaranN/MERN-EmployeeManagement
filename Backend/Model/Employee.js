@@ -12,7 +12,7 @@ const employeeSchema = new mongoose.Schema({
     MobileNo:{
         type: String,
         required: true,
-        unique: true
+        
     },
     designation:{
         type: String,

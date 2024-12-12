@@ -80,8 +80,9 @@ const CreateEmployee = () => {
         try {
             // Call the addEmployee API with formData
             const response = await addEmployee(formData);
+           
 
-            if (response && response.success) {
+            if (response) {
                 // Reset form data to initial state
                 setformData({
                     name: '',
