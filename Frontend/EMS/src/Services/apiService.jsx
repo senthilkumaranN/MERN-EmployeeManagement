@@ -4,7 +4,7 @@ const API_URL = `${import.meta.env.VITE_API_URL}/api/employee`;
 
 
 const token = localStorage.getItem('accesstoken');
-console.log('Token from localStorage:', token);
+
 
 
 if (token) {
